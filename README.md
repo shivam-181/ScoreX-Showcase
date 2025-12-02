@@ -8,11 +8,12 @@ A modern, AI-powered football companion app. > Combining real-time scores with w
 Note: This repository serves as a public portfolio showcase. The full source code for ScoreX is currently hosted in a private repository to protect intellectual property.
 
 If you are a recruiter or collaborator interested in the full codebase, please Contact Me directly.
+<br/><br/>
 
 📱 Project Overview
 
 ScoreX is not just another score-keeping app. It is an intelligent companion that contextualizes the game for you. By leveraging Google's Gemini 2.0 Flash, the app understands the nuance of football matches, offering probability insights and conversational engagement that feels like chatting with a knowledgeable friend, not a bot.
-
+<br/><br/>
 🌟 Key Features
 
 | Feature | Description |
@@ -22,7 +23,7 @@ ScoreX is not just another score-keeping app. It is an intelligent companion tha
 | ⚡ **Real-Time Updates** | Live score architecture using high-frequency polling and optional socket connections. |
 | 🎨 **Glassmorphism UI** | Stunning modern UI built with TailwindCSS + Framer Motion for smooth, app-like animations. |
 | 📰 **News Ticker** | A scrolling ticker for breaking football news, transfers, and injury updates. |
-
+<br/><br/>
 📸 Interface Previews
 
 <img src="./assets/ai-chat.png" width="700" alt="AI Chat Demo" />
@@ -51,6 +52,7 @@ graph LR
     AI -->|Generative Insight| BE
     BE -->|JSON Response| FE
 ```
+<br/><br/>
 ## 🛠️ Tech Stack
 
 **Frontend:**  
@@ -66,7 +68,7 @@ MongoDB (via Mongoose)
 Google Gemini 2.0 Flash (via @google/generative-ai)
 
 ---
-
+<br/><br/>
 ## 💻 Featured Code: AI Persona Injection
 
 While the full codebase is private, here is how ScoreX injects its football-expert personality using a system-level prompt.
@@ -98,7 +100,7 @@ router.post('/', async (req, res) => {
     }
 });
 ```
-
+<br/><br/>
 📬 Contact
 
 Created by Shivam Kumar
@@ -108,7 +110,7 @@ Created by Shivam Kumar
 🔗 LinkedIn: https://www.linkedin.com/in/shivam-void/
 
 🌐 Portfolio: https://shivam-void.vercel.app/
-
+<br/><br/>
 © Copyright Notice
 
 The concept, design, UI, and source code of ScoreX are the intellectual property of Shivam Kumar.
