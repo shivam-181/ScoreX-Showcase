@@ -25,10 +25,10 @@ ScoreX is not just another score-keeping app. It is an intelligent companion tha
 
 📸 Interface Previews
 
-[PLACEHOLDER: Add a GIF here showing the AI Chat responding to a user]
-Figure 1: ScoreX AI analyzing a match in real-time.
+<img src="./assets/ai-chat.png" width="700" alt="AI Chat Demo" />
+Figure 1: ScoreX AI.
 
-[PLACEHOLDER: Add a Screenshot here of the Main Dashboard/Scoreboard]
+<img src="./assets/dashboard.png" width="800" alt="Dashboard Preview" />
 Figure 2: The Dashboard featuring the Glassmorphism design system.
 
 🏗 System Architecture
