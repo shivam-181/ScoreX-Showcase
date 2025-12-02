@@ -100,3 +100,74 @@ yaml
 Copy code
 
 ---
+🛠️ Tech Stack
+Frontend
+
+Next.js 16 (App Router)
+
+React 19
+
+TailwindCSS
+
+Framer Motion
+
+Backend
+
+Node.js
+
+Express.js
+
+TypeScript
+
+Database
+
+MongoDB (Mongoose)
+
+AI Engine
+
+Google Gemini 2.0 Flash
+
+@google/generative-ai
+
+💻 Featured Code: AI Persona Injection
+
+Here is how ScoreX injects personality into its AI assistant using a system-level prompt.
+(The full backend remains private.)
+// ScoreX AI Integration Logic (Backend)
+
+const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY || '');
+const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+
+router.post('/', async (req, res) => {
+    const { message } = req.body;
+
+    const systemPrompt = `
+      You are ScoreX AI, a passionate and knowledgeable football assistant.
+      Tone: Enthusiastic, professional, slightly witty.
+      Context: The user is on "ScoreX", a modern football scores app.
+      User Query: ${message}
+    `;
+
+    try {
+        const result = await model.generateContent(systemPrompt);
+        const response = result.response.text();
+        res.json({ response });
+    } catch (error) {
+        console.error("AI Generation Error:", error);
+        res.status(500).json({ error: "VAR Check in progress... (AI Error)" });
+    }
+});
+📬 Contact
+
+Created by Shivam Kumar
+
+📧 Email: shivamkumar060703@gmail.com
+
+🔗 LinkedIn: https://www.linkedin.com/in/shivam-void/
+
+🌐 Portfolio: https://shivam-void.vercel.app/
+
+© Copyright Notice
+
+All designs, ideas, architecture, and source code of ScoreX are the intellectual property of Shivam Kumar.
+Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.
