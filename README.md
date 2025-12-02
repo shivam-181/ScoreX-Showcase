@@ -15,7 +15,13 @@ ScoreX is not just another score-keeping app. It is an intelligent companion tha
 
 🌟 Key Features
 
-Feature
+| Feature | Description |
+|--------|-------------|
+| 🧠 **ScoreX AI Assistant** | A conversational agent with a witty “football expert” persona. Capable of answering complex stats questions in real-time. |
+| 📊 **AI Insight Bar** | A dynamic visual component predicting Home vs Away win probabilities using generative AI analysis. |
+| ⚡ **Real-Time Updates** | Live score architecture using high-frequency polling and optional socket connections. |
+| 🎨 **Glassmorphism UI** | Stunning modern UI built with TailwindCSS + Framer Motion for smooth, app-like animations. |
+| 📰 **News Ticker** | A scrolling ticker for breaking football news, transfers, and injury updates. |
 
 Description
 
