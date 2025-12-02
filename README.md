@@ -23,6 +23,8 @@ ScoreX is not just another score-keeping app. It is an intelligent companion tha
 | ⚡ **Real-Time Updates** | Live score architecture using high-frequency polling and optional socket connections. |
 | 🎨 **Glassmorphism UI** | Stunning modern UI built with TailwindCSS + Framer Motion for smooth, app-like animations. |
 | 📰 **News Ticker** | A scrolling ticker for breaking football news, transfers, and injury updates. |
+
+
 <br/><br/>
 📸 Interface Previews
 
