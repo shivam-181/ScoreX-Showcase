@@ -46,43 +46,54 @@ graph LR
     AI -->|Generative Insight| BE
     BE -->|JSON Response| FE
 ```
-🛠️ Tech Stack
-Frontend: Next.js 16 (App Router), React 19, TailwindCSS, Framer Motion
-Backend: Node.js, Express, TypeScript
-Database: MongoDB (via Mongoose)
-AI Engine: Google Gemini 2.0 Flash (via @google/generative-ai)
+## 🛠️ Tech Stack
 
-💻 Featured Code: AI Persona Injection
-While the full codebase is private, here is how ScoreX handles the AI personality injection. The system prompt ensures the model behaves like a passionate football fan instead of a generic assistant.
+**Frontend:**  
+Next.js 16 (App Router), React 19, TailwindCSS, Framer Motion  
 
-ts
-Copy code
+**Backend:**  
+Node.js, Express, TypeScript  
+
+**Database:**  
+MongoDB (via Mongoose)  
+
+**AI Engine:**  
+Google Gemini 2.0 Flash (via @google/generative-ai)
+
+---
+
+## 💻 Featured Code: AI Persona Injection
+
+While the full codebase is private, here is how ScoreX injects its football-expert personality using a system-level prompt.
+
+```ts
 // ScoreX AI Integration Logic (Backend)
 
-// Initialize Gemini with the Flash 2.0 model for low latency
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY || '');
 const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
 router.post('/', async (req, res) => {
-    const { message } = req.body;
+    const { message } = req.body;
 
-    // System Prompt: Defines the AI's persona as a witty football expert
-    const systemPrompt = `
-      You are ScoreX AI, a passionate and knowledgeable football assistant.
-      Tone: Enthusiastic, professional, slightly witty.
-      Context: The user is on "ScoreX", a modern football scores app.
-      User Query: ${message}
-    `;
+    // System Prompt: Defines the AI's persona as a witty football expert
+    const systemPrompt = `
+      You are ScoreX AI, a passionate and knowledgeable football assistant.
+      Tone: Enthusiastic, professional, slightly witty.
+      Context: The user is on "ScoreX", a modern football scores app.
+      User Query: ${message}
+    `;
 
-    try {
-        const result = await model.generateContent(systemPrompt);
-        const response = result.response.text();
-        res.json({ response });
-    } catch (error) {
-        console.error("AI Generation Error:", error);
-        res.status(500).json({ error: "VAR Check in progress... (AI Error)" });
-    }
+    try {
+        const result = await model.generateContent(systemPrompt);
+        const response = result.response.text();
+        res.json({ response });
+    } catch (error) {
+        console.error("AI Generation Error:", error);
+        res.status(500).json({ error: "VAR Check in progress... (AI Error)" });
+    }
 });
+```
+
 📬 Contact
 Created by Shivam Kumar
 
