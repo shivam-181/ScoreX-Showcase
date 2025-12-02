@@ -23,28 +23,6 @@ ScoreX is not just another score-keeping app. It is an intelligent companion tha
 | 🎨 **Glassmorphism UI** | Stunning modern UI built with TailwindCSS + Framer Motion for smooth, app-like animations. |
 | 📰 **News Ticker** | A scrolling ticker for breaking football news, transfers, and injury updates. |
 
-Description
-
-🧠 ScoreX AI Assistant
-
-A conversational agent with a "witty football expert" persona. Capable of answering complex stats questions in real-time.
-
-📊 AI Insight Bar
-
-A dynamic visual component that predicts Home vs. Away win probabilities using generative AI analysis.
-
-⚡️ Real-Time Updates
-
-Live score tracking architecture supporting high-frequency polling and socket connections.
-
-🎨 Glassmorphism UI
-
-A stunning, modern interface built with TailwindCSS and Framer Motion for smooth, app-like transitions.
-
-📰 News Ticker
-
-Integrated scrolling ticker for breaking transfer news and injury updates.
-
 📸 Interface Previews
 
 [PLACEHOLDER: Add a GIF here showing the AI Chat responding to a user]
