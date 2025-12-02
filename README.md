@@ -36,6 +36,7 @@ Figure 2: The Dashboard featuring the Glassmorphism design system.
 ScoreX utilizes a **decoupled architecture** to ensure the AI service never bottlenecks real-time score feeds.
 
 ```mermaid
+
 graph LR
     User[User / Client] -->|Interaction| FE[Next.js 16 Frontend]
     FE -->|REST API| API[Axios Layer]
@@ -44,22 +45,18 @@ graph LR
     BE -->|Prompt Engineering| AI[Google Gemini 2.0 Flash]
     AI -->|Generative Insight| BE
     BE -->|JSON Response| FE
-
-
+```
 🛠️ Tech Stack
-
-Frontend: Next.js 16 (App Router), React 19, TailwindCSS, Framer Motion.
-
-Backend: Node.js, Express, TypeScript.
-
-Database: MongoDB (via Mongoose).
-
-AI Engine: Google Gemini 2.0 Flash (via @google/generative-ai).
+Frontend: Next.js 16 (App Router), React 19, TailwindCSS, Framer Motion
+Backend: Node.js, Express, TypeScript
+Database: MongoDB (via Mongoose)
+AI Engine: Google Gemini 2.0 Flash (via @google/generative-ai)
 
 💻 Featured Code: AI Persona Injection
+While the full codebase is private, here is how ScoreX handles the AI personality injection. The system prompt ensures the model behaves like a passionate football fan instead of a generic assistant.
 
-While the full codebase is private, here is a look at how ScoreX handles the AI personality injection. We utilize system prompting to ensure the model behaves like a "passionate fan" rather than a robotic assistant.
-
+ts
+Copy code
 // ScoreX AI Integration Logic (Backend)
 
 // Initialize Gemini with the Flash 2.0 model for low latency
@@ -68,9 +65,8 @@ const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
 router.post('/', async (req, res) => {
     const { message } = req.body;
-    
+
     // System Prompt: Defines the AI's persona as a witty football expert
-    // This ensures consistency in tone across the application
     const systemPrompt = `
       You are ScoreX AI, a passionate and knowledgeable football assistant.
       Tone: Enthusiastic, professional, slightly witty.
@@ -87,20 +83,20 @@ router.post('/', async (req, res) => {
         res.status(500).json({ error: "VAR Check in progress... (AI Error)" });
     }
 });
-
-
 📬 Contact
+Created by Shivam Kumar
 
-Created by [Your Name].
+Email: shivamkumar060703@gmail.com
 
-I am open to discussing the technical implementation, architecture decisions, or potential employment opportunities.
+LinkedIn: https://www.linkedin.com/in/shivam-void/
 
-Email: [Your Email Here]
-
-LinkedIn: [Link to your LinkedIn]
-
-Portfolio: [Link to your Portfolio Website]
+Portfolio: https://shivam-void.vercel.app/
 
 © Copyright Notice
+The concept, design, and source code of ScoreX are the intellectual property of Shivam Kumar.
+Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.
 
-The concept, design, and source code of ScoreX are the intellectual property of [Your Name]. Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.
+yaml
+Copy code
+
+---
