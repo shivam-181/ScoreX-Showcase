@@ -95,14 +95,16 @@ router.post('/', async (req, res) => {
 ```
 
 📬 Contact
+
 Created by Shivam Kumar
 
-Email: shivamkumar060703@gmail.com
+📧 Email: shivamkumar060703@gmail.com
 
-LinkedIn: https://www.linkedin.com/in/shivam-void/
+🔗 LinkedIn: https://www.linkedin.com/in/shivam-void/
 
-Portfolio: https://shivam-void.vercel.app/
+🌐 Portfolio: https://shivam-void.vercel.app/
 
 © Copyright Notice
-The concept, design, and source code of ScoreX are the intellectual property of Shivam Kumar.
+
+The concept, design, UI, and source code of ScoreX are the intellectual property of Shivam Kumar.
 Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.
