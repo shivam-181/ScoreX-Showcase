@@ -33,8 +33,9 @@ Figure 2: The Dashboard featuring the Glassmorphism design system.
 
 🏗 System Architecture
 
-ScoreX utilizes a decoupled architecture to ensure the AI service doesn't bottleneck the real-time score feeds.
+ScoreX utilizes a **decoupled architecture** to ensure the AI service never bottlenecks real-time score feeds.
 
+```mermaid
 graph LR
     User[User / Client] -->|Interaction| FE[Next.js 16 Frontend]
     FE -->|REST API| API[Axios Layer]
