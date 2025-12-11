@@ -28,7 +28,7 @@ ScoreX is not just another score-keeping app. It is an intelligent companion tha
 <br/><br/>
 📸 Interface Previews
 
-<img src="./assets/ai-chat.png" width="700" alt="AI Chat Demo" />
+<img src="./assets/Screenshot 2025-12-12 032604.png" width="700" alt="AI Chat Demo" />
 Figure 1: ScoreX AI.
 
 <br/><br/>
