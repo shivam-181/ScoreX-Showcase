@@ -33,7 +33,7 @@ Figure 1: ScoreX AI.
 
 <br/><br/>
 
-<img src="./assets/dashboard.png" width="800" alt="Dashboard Preview" />
+<img src="./assets/Screenshot 2025-12-12 031534.png" width="800" alt="Dashboard Preview" />
 Figure 2: The Dashboard featuring the Glassmorphism design system.
 
 <br/><br/>
